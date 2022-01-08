@@ -33,6 +33,10 @@ public class Product {
 		p.setPreco(p.getPreco() * 1.1);
 	}
 
+	public  void nonStaticPriceUpdate() {
+		preco = preco * 1.1;
+	}
+
 	@Override
 	public String toString() {
 		return nome  + ", " + String.format("%.2f", preco);
